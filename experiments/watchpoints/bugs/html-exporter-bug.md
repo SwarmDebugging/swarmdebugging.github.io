@@ -41,6 +41,19 @@ To illustrate, we selected the `openListItem` method, whose job is to open an HT
  
 ![Screenshot 2021-03-17 at 10 14 22](https://user-images.githubusercontent.com/26929529/111443315-8d4cad00-8709-11eb-8114-a51cf60580ba.png)
 
+HTML writers generate output HTML markup using a simple stack.
+Let us take the example of an HTML list.
+For that, let us assume that we use a writer object stored in a variable `writer`.
+This writer has an empty stack, that we represent as the following:
+
+| |
+| :------------- |
+|  | 
+|  | 
+
+
+
+
 ## The problem
 
 ## Your task
