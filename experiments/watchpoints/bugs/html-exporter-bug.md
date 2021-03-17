@@ -100,7 +100,8 @@ Similarly, the stack is popped and the popped element is closed in the HTML:
 
 ## The problem
 
-To test the HTML export, we write a unit test that takes as input the above academic publication data, and tests that the generated HTML correspond to a valid HTML code and to the expected format.
+To test our HTML export, we write a unit test that takes as input the above academic publication data, and tests that the generated HTML corresponds to valid HTML code and to the expected format.
+You will find this test in class `CVGGeneratorTest`, under the name `testGeneratePublication`. 
 
 ```Smalltalk
 testGeneratePublication
@@ -124,5 +125,12 @@ testGeneratePublication
         </span>
      </li>>'
  ```
+The test first create the publication model from the input data, then instantiate a generator.
+The generator is set to the *html* mode, and is passed to the publication object.
+The publication object will ask the generator to output the publication data.
+The generator will transform that publication to HTML (as we set the *html* mode) using an HTML writer.
+
+Unfortunately, the test cannot complete because it encounters a bug.
+When you try to run it, it starts but its execution stops and a debugger opens.
 
 ## Your task
