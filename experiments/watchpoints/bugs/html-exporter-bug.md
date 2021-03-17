@@ -2,6 +2,9 @@
 
 ## Context: the website generator
 
+We use a program that takes as input a model representing a person's CV, and generates HTML code for this person's website.
+For instance, the following code represents an input for an academic publication:
+
 ```Smalltalk
   {
     #type: #journal,
@@ -13,6 +16,10 @@
     #link: 'pdf/papers/lub-pattern.pdf'
   }
  ```
+This input is processed by the software to produce an internal representation of that academic publication.
+In that case, that would be an instance of a class named `CVGPublication`.
+Once that model is in memory, we use an HTML generator, whose job is to produce a specific code for the person's website.
+In our case, it should generate the following HTML code: 
  
  ```HTML
 <li>
@@ -28,3 +35,7 @@
 ```
  
 ![Screenshot 2021-03-17 at 10 14 22](https://user-images.githubusercontent.com/26929529/111443315-8d4cad00-8709-11eb-8114-a51cf60580ba.png)
+
+## The problem
+
+## Your task
