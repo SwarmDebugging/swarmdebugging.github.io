@@ -59,7 +59,7 @@ The stack will become as follows:
 |  | 
 | ol | 
 
-And the writer will generate the HTML code: `<ol>`.
+And the writer will write the following HTML on its internal stream: `<ol>`.
 Let us now write a list item: `writer listItem: 'hello world'`.
 First, the generator will put a list item on the stack:
 
@@ -68,12 +68,12 @@ First, the generator will put a list item on the stack:
 | li | 
 | ol | 
 
-The writer then generates the following HTML:
+The writer then writes the following HTML on its internal stream:
 ```HTML
 <ol>
   <li>'hello world'
 ```
-Just after, the writer closes the markup by poping the stack, and closing the popped element in the HTML code:
+Just after, the writer closes the markup by poping the stack, and closes the popped element in the HTML code:
 | |
 | :-------------: |
 | | 
@@ -99,5 +99,30 @@ Similarly, the stack is popped and the popped element is closed in the HTML:
 
 
 ## The problem
+
+To test the HTML export, we write a unit test that takes as input the above academic publication data, and tests that the generated HTML correspond to a valid HTML code and to the expected format.
+
+```Smalltalk
+testGeneratePublication
+
+	| publication generator |
+	publication := self publication.
+	generator := CVGGenerator new.
+	generator html.
+	publication acceptGenerator: generator.
+	self
+		assert: generator stream contents
+		equals:
+		'<li>
+       <b>Lub: A pattern for fine grained behavior adaptation at runtime</b>.
+       <i>Steven Costiou</i>, Mickaël Kerboeuf, Glenn Cavarlé, Alain Plantec. 
+        Science of Computer Programming, Volume 161, ISSN 0167-6423. 2018. 
+        <span class="paper-pdf">
+          <a href="pdf/papers/lub-pattern.pdf" target=_blank>
+            <i class="material-icons md-18">link</i>
+          </a>
+        </span>
+     </li>>'
+ ```
 
 ## Your task
