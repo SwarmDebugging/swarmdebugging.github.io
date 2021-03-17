@@ -41,17 +41,61 @@ To illustrate, we selected the `openListItem` method, whose job is to open an HT
  
 ![Screenshot 2021-03-17 at 10 14 22](https://user-images.githubusercontent.com/26929529/111443315-8d4cad00-8709-11eb-8114-a51cf60580ba.png)
 
-HTML writers generate output HTML markup using a simple stack.
+HTML writers generate output HTML on a stream, and manage HTML markup using a stack.
 Let us take the example of an HTML list.
 For that, let us assume that we use a writer object stored in a variable `writer`.
 This writer has an empty stack, that we represent as the following:
 
 | |
-| :------------- |
+| :-------------: |
 |  | 
 |  | 
 
+Let us open an ordered list: `writer startOrderedList`. 
+The stack will become as follows:
 
+| |
+| :-------------: |
+|  | 
+| ol | 
+
+And the writer will generate the HTML code: `<ol>`.
+Let us now write a list item: `writer listItem: 'hello world'`.
+First, the generator will put a list item on the stack:
+
+| |
+| :-------------: |
+| li | 
+| ol | 
+
+The writer then generates the following HTML:
+```HTML
+<ol>
+  <li>'hello world'
+```
+Just after, the writer closes the markup by poping the stack, and closing that syntaxic element in the HTML code:
+| |
+| :-------------: |
+| | 
+| ol | 
+
+```HTML
+<ol>
+  <li>'hello world'</li>
+```
+
+We then close the list: `writer stopOrderedList`.
+Similarly, the stack is popped and the popped element is closed in the HTML.
+| |
+| :-------------: |
+| | 
+|  | 
+
+```HTML
+<ol>
+  <li>'hello world'</li>
+</ol>
+```
 
 
 ## The problem
