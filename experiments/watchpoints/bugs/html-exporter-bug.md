@@ -1,6 +1,6 @@
 # bug description 
 
-## Context: the website generator
+## Context: the website generator
 
 ```Smalltalk
   {
@@ -27,3 +27,4 @@
 </li>
 ```
  
+![Screenshot 2021-03-17 at 10 14 22](https://user-images.githubusercontent.com/26929529/111443315-8d4cad00-8709-11eb-8114-a51cf60580ba.png)
