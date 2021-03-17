@@ -134,3 +134,9 @@ Unfortunately, the test cannot complete because it encounters a bug.
 When you try to run it, it starts but its execution stops and a debugger opens.
 
 ## Your task
+
+For this task, you must:
+* Understand the problem and explain it when you think you found it
+* Fix the problem and the test must pass
+
+To explain the problem, you will provide a few sentences describing what you understood.
