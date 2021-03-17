@@ -73,7 +73,7 @@ The writer then generates the following HTML:
 <ol>
   <li>'hello world'
 ```
-Just after, the writer closes the markup by poping the stack, and closing that syntaxic element in the HTML code:
+Just after, the writer closes the markup by poping the stack, and closing the popped element in the HTML code:
 | |
 | :-------------: |
 | | 
@@ -85,7 +85,7 @@ Just after, the writer closes the markup by poping the stack, and closing that s
 ```
 
 We then close the list: `writer stopOrderedList`.
-Similarly, the stack is popped and the popped element is closed in the HTML.
+Similarly, the stack is popped and the popped element is closed in the HTML:
 | |
 | :-------------: |
 | | 
