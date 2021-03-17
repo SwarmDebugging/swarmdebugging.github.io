@@ -18,7 +18,7 @@ For instance, the following code represents an input for an academic publication
  ```
 This input is processed by the software to produce an internal representation of that academic publication.
 In that case, that would be an instance of a class named `CVGPublication`.
-Once that model is in memory, we use an HTML generator, whose job is to produce a specific code for the person's website.
+Once that model is in memory, we use an HTML writer object, whose job is to produce a specific code for the person's website.
 In our case, it should generate the following HTML code: 
  
  ```HTML
@@ -33,6 +33,11 @@ In our case, it should generate the following HTML code:
   </span>
 </li>
 ```
+ 
+HTML writer objects are part of a set of classes whose job is to export the model into various formats.
+For instance, in the following image we can see a code browser opened on the `CVGSimpleHTMLWriter` class (second column).
+This writer class has several export protocols (third column), each one regrouping methods (fourth column) to export particular HTML markup.
+To illustrate, we selected the `openListItem` method, whose job is to open an HTML list:
  
 ![Screenshot 2021-03-17 at 10 14 22](https://user-images.githubusercontent.com/26929529/111443315-8d4cad00-8709-11eb-8114-a51cf60580ba.png)
 
