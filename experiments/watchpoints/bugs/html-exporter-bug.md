@@ -94,7 +94,7 @@ Similarly, the stack is popped and the popped element is closed in the HTML:
 | |
 | :-------------: |
 | | 
-|  | 
+| | 
 
 ```HTML
 <ol>
