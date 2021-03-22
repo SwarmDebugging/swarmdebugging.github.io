@@ -1,5 +1,7 @@
 --
+
 permalink: /bugs/html-exporter-bug
+
 --
 
 # The HTML exporter bug
