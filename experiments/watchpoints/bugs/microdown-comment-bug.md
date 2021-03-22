@@ -25,7 +25,7 @@ From there, you can write your class comment and save it by doing a right click 
 
 ## The problem
 
-If you try to copy/paste this string into the comment text editor, and then save it, the system crashes and opens a debugger on a primitive failure:
+If you try to copy/paste this string into the comment text editor and then save it, the system crashes and opens a debugger on a primitive failure:
 
 ```
 I'm a simple lexer. I'm used bt the DLitlleLParser.
@@ -38,3 +38,15 @@ I recogniseI
 Whitespaces and separators can be customised using setters.
 Subclasses may change the definition of names by redefining isCurrentALetter.
 ```
+Example debugger opened after the primitive failure resulting from saving a class comment with the string defined above:
+[Screenshot 2021-03-22 at 14 54 15](https://user-images.githubusercontent.com/26929529/112000654-7bf70c80-8b1e-11eb-88d3-91d75f3d4ae4.png)
+
+
+## Your task
+
+For this task, you must:
+
+* Understand the problem and explain it when you think you found it
+* Fix the problem and commenting any class with the aforementionned string should not provoke any primitive failure!
+
+To explain the problem, you will provide a few sentences describing what you understood.
