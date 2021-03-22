@@ -1,5 +1,6 @@
 ---
 title: Swarm Debugging
+menu: README
 order: 1
 ---
 ## Welcome to GitHub Pages
