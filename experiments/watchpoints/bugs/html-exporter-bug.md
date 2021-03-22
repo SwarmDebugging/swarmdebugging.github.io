@@ -1,8 +1,8 @@
 --
-title: The HTML exporter bug
 permalink: /bugs/html-exporter-bug
 --
 
+# The HTML exporter bug
 In this task, we provide you with a program exporting input data to HTML and a unit test to test it.
 The unit test encounters a failure and cannot run completely.
 
