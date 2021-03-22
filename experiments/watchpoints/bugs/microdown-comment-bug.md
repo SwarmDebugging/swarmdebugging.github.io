@@ -39,6 +39,7 @@ Whitespaces and separators can be customised using setters.
 Subclasses may change the definition of names by redefining isCurrentALetter.
 ```
 Example debugger opened after the primitive failure resulting from saving a class comment with the string defined above:
+
 ![Screenshot 2021-03-22 at 14 54 15](https://user-images.githubusercontent.com/26929529/112000654-7bf70c80-8b1e-11eb-88d3-91d75f3d4ae4.png)
 
 
