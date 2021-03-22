@@ -11,6 +11,14 @@ The task is about understanding and fixing this bug.
 
 ## Context: commenting a class
 
-To comment a classe, one has to first open a system browser through the general menu: *Browse > System browser*.
+To comment a classe, one has to first open a system browser through the general menu: <br>
+*Browse > System browser*.
+
+Then, as illustrated in the following picture:
+1. Select a class (for the purpose of this task, you can select any)
+2. Click the *comment* pane in the text editor
+3. Untick the *toggle edit* checkbox to be able to edit the text
 
 ![Screenshot 2021-03-22 at 14 39 34](https://user-images.githubusercontent.com/26929529/111998842-b3fd5000-8b1c-11eb-92d5-bcf3c2914ff1.png)
+
+From there, you can write your class comment and save it by doing a right click in the editor and click *Accept*, or by doing *CTRL + S* (*CMD* for Mac users).
