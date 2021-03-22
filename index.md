@@ -1,6 +1,5 @@
 ---
 title: Swarm Debugging
-menu: index
 order: 1
 ---
 ## Welcome to GitHub Pages
