@@ -83,6 +83,7 @@ The writer then writes the following HTML on its internal stream:
   <li>'hello world'
 ```
 Just after, the writer closes the markup by poping the stack, and closes the popped element in the HTML code:
+
 | |
 | :-------------: |
 | | 
@@ -95,6 +96,7 @@ Just after, the writer closes the markup by poping the stack, and closes the pop
 
 We then close the list: `writer stopOrderedList`.
 Similarly, the stack is popped and the popped element is closed in the HTML:
+
 | |
 | :-------------: |
 | | 
