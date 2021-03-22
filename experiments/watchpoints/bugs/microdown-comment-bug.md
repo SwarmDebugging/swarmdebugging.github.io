@@ -22,3 +22,19 @@ Then, as illustrated in the following picture:
 ![Screenshot 2021-03-22 at 14 39 34](https://user-images.githubusercontent.com/26929529/111998842-b3fd5000-8b1c-11eb-92d5-bcf3c2914ff1.png)
 
 From there, you can write your class comment and save it by doing a right click in the editor and click *Accept*, or by doing *CTRL + S* (*CMD* for Mac users).
+
+## The problem
+
+If you try to copy/paste this string into the comment text editor, and then save it, the system crashes and opens a debugger on a primitive failure:
+
+```
+I'm a simple lexer. I'm used bt the DLitlleLParser.
+
+I recogniseI
+- names: list of characters letter and number and '
+- separators: one character separator.
+- escape char \
+
+Whitespaces and separators can be customised using setters.
+Subclasses may change the definition of names by redefining isCurrentALetter.
+```
