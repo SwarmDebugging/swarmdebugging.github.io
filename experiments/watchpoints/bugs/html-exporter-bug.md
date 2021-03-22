@@ -1,7 +1,5 @@
 --
-
-permalink: /bugs/html-exporter-bug
-
+permalink: /bugs/html-exporter-bug/
 --
 
 # The HTML exporter bug
