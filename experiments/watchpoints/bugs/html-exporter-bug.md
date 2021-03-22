@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /html-exporter-bug
 ---
 
 # The HTML exporter bug
